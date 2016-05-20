@@ -41,7 +41,7 @@ install:
 
 
  - conda build --python $TRAVIS_PYTHON_VERSION package/pdb2pqr/
- - conda install pdb2pqr --use-local
+ - conda install htmd-pdb2pqr --use-local
 
 script:
 
