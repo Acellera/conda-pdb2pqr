@@ -1,0 +1,22 @@
+package:
+  name:  htmd-pdb2pqr
+  version: {{ environ.get('BUILD_VERSION', "0.0.1" ) }} 
+
+
+build:
+  number: {{ environ.get('BUILD_NUMBER', 0 ) }}
+
+source:
+  git_url: https://github.com/tonigi/apbs-pdb2pqr
+
+
+ 
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+   
+about:
+  license: "LGPL 2.1"
