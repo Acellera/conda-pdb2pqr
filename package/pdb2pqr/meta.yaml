@@ -10,6 +10,12 @@ source:
   git_url: https://github.com/tonigi/apbs-pdb2pqr
 
 
+test:
+    files:
+        - 3PTB.pdb
+    commands:
+        - pdb2pqr_cli --ff parse --with-ph=7.0 --ff=parse --ph-calc-method=propka31 3PTB.pdb 3PTB.pqr
+
  
 requirements:
   build:
@@ -17,6 +23,8 @@ requirements:
     - setuptools
   run:
     - python
+    - propka
    
 about:
-  license: "LGPL 2.1"
+  home: http://www.poissonboltzmann.org/
+  license: "BSD"
