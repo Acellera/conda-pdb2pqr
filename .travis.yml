@@ -10,12 +10,19 @@ matrix:
    - os: linux
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.5
+   - os: linux
+     language: generic
+     env: TRAVIS_PYTHON_VERSION=3.6
    - os: osx
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.4
    - os: osx
      language: generic
      env: TRAVIS_PYTHON_VERSION=3.5
+   - os: osx
+     language: generic
+     env: TRAVIS_PYTHON_VERSION=3.6
+
 
 
 install:
