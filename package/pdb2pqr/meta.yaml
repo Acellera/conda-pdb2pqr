@@ -13,7 +13,7 @@ build:
 #   git_rev: htmd-fixups
 
 
-# Giving up.
+# Why doesn't it work??? Giving up.
 #test:
 #    files:
 #        - 3PTB.pdb
