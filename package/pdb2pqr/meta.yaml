@@ -17,7 +17,6 @@ test:
     files:
         - 3PTB.pdb
     commands:
-        - cat pdb2pqr_cli --verbose --ff parse --with-ph=7.0 --ff=parse --ph-calc-method=propka31 3PTB.pdb 3PTB.pqr
         - python pdb2pqr_cli --verbose --ff parse --with-ph=7.0 --ff=parse --ph-calc-method=propka31 3PTB.pdb 3PTB.pqr
 
  
