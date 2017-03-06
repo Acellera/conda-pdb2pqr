@@ -1,11 +1,11 @@
 package:
   name:  htmd-pdb2pqr
-  version: {{ environ.get('BUILD_VERSION', "0.0.1" ) }} 
+  version: {{ environ.get('BUILD_VERSION', "0.0.1" ) }}
 
 
 build:
-  number: {{ environ.get('BUILD_NUMBER', 0 ) }}
   noarch: python
+  number: {{ environ.get('BUILD_NUMBER', 0 ) }}
 
 # Putting this in build.sh because the download is huge and --depth=1 saves a lot
 # source:
@@ -14,11 +14,11 @@ build:
 
 
 # Why doesn't it work??? Giving up.
-#test:
-#    files:
-#        - 3PTB.pdb
-#    commands:
-#        - pdb2pqr_cli --verbose --ff parse --with-ph=7.0 --ff=parse --ph-calc-method=propka31 3PTB.pdb 3PTB.pqr
+test:
+    files:
+        - 3PTB.pdb
+    commands:
+        - pdb2pqr_cli --verbose --ff parse --with-ph=7.0 --ff=parse --ph-calc-method=propka31 3PTB.pdb 3PTB.pqr
 
  
 requirements:
