@@ -40,6 +40,6 @@ after_success:
  - export PATH="$HOME/miniconda/bin:$PATH"
  - echo $PATH
  - anaconda -t $ANACONDA_TOKEN upload  $HOME/miniconda/conda-bld/*/htmd-pdb2pqr-*.tar.bz2 -u acellera
- - ls -R $HOME
+# - ls -R $HOME
 
 
