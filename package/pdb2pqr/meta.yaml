@@ -7,9 +7,10 @@ build:
   number: {{ environ.get('BUILD_NUMBER', 0 ) }}
   noarch: python
 
-source:
-  git_url: https://github.com/tonigi/apbs-pdb2pqr
-  git_rev: htmd-fixups
+# Putting this in build.sh because the download is huge and --depth=1 saves a lot
+# source:
+#   git_url: https://github.com/tonigi/apbs-pdb2pqr
+#   git_rev: htmd-fixups
 
 
 test:
