@@ -6,7 +6,7 @@ matrix:
   include:
    - os: linux
      language: generic
-     env: TRAVIS_PYTHON_VERSION=3.5
+     env: TRAVIS_PYTHON_VERSION=3.6
 
 
 install:
@@ -39,7 +39,7 @@ script:
 after_success:
  - export PATH="$HOME/miniconda/bin:$PATH"
  - echo $PATH
- - anaconda -t $ANACONDA_TOKEN upload  $HOME/miniconda/conda-bld/*-64/htmd-pdb2pqr-[0-9]*.tar.bz2 -u acellera
- - ls -lR
+ - ls -lR $HOME
+ - anaconda -t $ANACONDA_TOKEN upload  $HOME/miniconda/conda-bld/*/htmd-pdb2pqr-*.tar.bz2 -u acellera
 
 
