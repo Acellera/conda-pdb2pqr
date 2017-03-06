@@ -14,5 +14,5 @@ git tag $tag
 date > trigger_file
 git add trigger_file
 git commit -m "Post-tag commit for $tag to trigger rebuild"
-git push
+git push --tags
 
