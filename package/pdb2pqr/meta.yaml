@@ -6,6 +6,8 @@ package:
 build:
   noarch: python
   number: {{ environ.get('BUILD_NUMBER', 0 ) }}
+  entry_points:
+    - pdb2pqr_cli = pdb2pqr.main:main
 
 # Putting this in build.sh because the download is huge and --depth=1 saves a lot
 # source:
