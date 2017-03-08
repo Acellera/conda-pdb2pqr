@@ -15,7 +15,6 @@ build:
 #   git_rev: htmd-fixups
 
 
-# Why doesn't it work??? Giving up.
 test:
     files:
         - 3PTB.pdb
