@@ -18,7 +18,8 @@ install:
  - conda config --add channels omnia
  - conda config --add channels acellera
  - conda update --all -y
- - conda install conda-build -y
+ # Toni. Removed anaconda from the line below for faster builds.
+ - conda install anaconda-client conda-build -y
 
  - conda create -q -n travis-env python=$TRAVIS_PYTHON_VERSION 
  - source activate travis-env
