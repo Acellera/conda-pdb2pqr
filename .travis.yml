@@ -15,11 +15,10 @@ install:
  - export PATH="$HOME/miniconda/bin:$PATH"
  - hash -r
  - conda config --set always_yes yes 
- - conda config --add channels omnia
  - conda config --add channels acellera
  - conda update --all -y
  # Toni. Removed anaconda from the line below for faster builds.
- - conda install conda-build -y
+ - conda install -y conda-build
 
  - conda create -q -n travis-env python=$TRAVIS_PYTHON_VERSION 
  - source activate travis-env
@@ -38,6 +37,7 @@ script:
 after_success:
  - export PATH="$HOME/miniconda/bin:$PATH"
  - echo $PATH
+ - conda install -y anaconda-client
  - anaconda -t $ANACONDA_TOKEN upload --force $HOME/miniconda/conda-bld/*/htmd-pdb2pqr-*.tar.bz2 -u acellera
 
 
