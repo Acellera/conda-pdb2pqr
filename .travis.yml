@@ -2,10 +2,11 @@ branches:
  only:
   - master 
 
+language: generic
+
 matrix:
   include:
    - os: linux
-     language: generic
      env: TRAVIS_PYTHON_VERSION=3.6
 
 
@@ -32,7 +33,7 @@ install:
  - conda build --python $TRAVIS_PYTHON_VERSION package/pdb2pqr/
  - conda install htmd-pdb2pqr --use-local
 
-script:
+# script:
 
 after_success:
  - export PATH="$HOME/miniconda/bin:$PATH"
