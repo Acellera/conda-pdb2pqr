@@ -6,4 +6,3 @@ This repo builds htmd's pdb2pqr version on Travis and uploads it on Conda.
 [![Anaconda-Server Badge](https://anaconda.org/acellera/htmd-pdb2pqr/badges/version.svg)](https://anaconda.org/acellera/htmd-pdb2pqr)
 
 Release reminder: commit changes, tag, commit a last change to trigger rebuild.
-
