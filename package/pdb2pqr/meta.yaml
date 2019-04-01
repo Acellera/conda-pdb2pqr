@@ -34,4 +34,4 @@ requirements:
 about:
   home: http://www.poissonboltzmann.org/
   license: "BSD"
-  description: Based on the official pdb2pqr, with patches to run on python 3.6 and 3.7
+  description: Based on the official pdb2pqr, with patches to run on python 3.6 and 3.7 and use propka 3.1

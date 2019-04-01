@@ -1,7 +1,9 @@
 #!/bin/bash
 
 if [[ $# -ne 1 ]]; then
+    echo "Usage: $0 <new tag name>"
     echo Latest tag is `git describe --tags`
+    echo "Please stick to tags like 2.1.1+htmd.XXX unless there is a new upstream"
     exit 0
 fi
 
